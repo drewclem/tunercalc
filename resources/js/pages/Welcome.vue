@@ -1,0 +1,12 @@
+<script setup lang="ts">
+import MainLayout from '@/layouts/MainLayout.vue';
+import { Head } from '@inertiajs/vue3';
+</script>
+
+<template>
+    <Head title="Welcome">
+        <link rel="preconnect" href="https://rsms.me/" />
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    </Head>
+    <MainLayout> testing </MainLayout>
+</template>
