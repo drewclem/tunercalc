@@ -1,27 +1,27 @@
 <script setup lang="ts">
-import NewPasswordController from '@/actions/App/Http/Controllers/Auth/NewPasswordController';
-import InputError from '@/components/InputError.vue';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
+// import NewPasswordController from '@/actions/App/Http/Controllers/Auth/NewPasswordController';
+// import InputError from '@/components/InputError.vue';
+// import { Button } from '@/components/ui/button';
+// import { Input } from '@/components/ui/input';
+// import { Label } from '@/components/ui/label';
 import AuthLayout from '@/layouts/AuthLayout.vue';
-import { Form, Head } from '@inertiajs/vue3';
-import { LoaderCircle } from 'lucide-vue-next';
-import { ref } from 'vue';
+// import { Form, Head } from '@inertiajs/vue3';
+// import { LoaderCircle } from 'lucide-vue-next';
+// import { ref } from 'vue';
 
-const props = defineProps<{
-    token: string;
-    email: string;
-}>();
+// const props = defineProps<{
+//     token: string;
+//     email: string;
+// }>();
 
-const inputEmail = ref(props.email);
+// const inputEmail = ref(props.email);
 </script>
 
 <template>
     <AuthLayout title="Reset password" description="Please enter your new password below">
         <Head title="Reset password" />
 
-        <Form
+        <!-- <Form
             v-bind="NewPasswordController.store.form()"
             :transform="(data) => ({ ...data, token, email })"
             :reset-on-success="['password', 'password_confirmation']"
@@ -66,6 +66,6 @@ const inputEmail = ref(props.email);
                     Reset password
                 </Button>
             </div>
-        </Form>
+        </Form> -->
     </AuthLayout>
 </template>

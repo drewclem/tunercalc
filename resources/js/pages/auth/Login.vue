@@ -1,16 +1,9 @@
 <script setup lang="ts">
-import AuthenticatedSessionController from '@/actions/App/Http/Controllers/Auth/AuthenticatedSessionController';
-import InputError from '@/components/InputError.vue';
-import TextLink from '@/components/TextLink.vue';
-import { Button } from '@/components/ui/button';
-import { Checkbox } from '@/components/ui/checkbox';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
+// import AuthenticatedSessionController from '@/actions/App/Http/Controllers/Auth/AuthenticatedSessionController';
 import AuthBase from '@/layouts/AuthLayout.vue';
-import { register } from '@/routes';
-import { request } from '@/routes/password';
-import { Form, Head } from '@inertiajs/vue3';
-import { LoaderCircle } from 'lucide-vue-next';
+// import { register } from '@/routes';
+// import { request } from '@/routes/password';
+import { Head } from '@inertiajs/vue3';
 
 defineProps<{
     status?: string;
@@ -26,7 +19,7 @@ defineProps<{
             {{ status }}
         </div>
 
-        <Form
+        <!-- <Form
             v-bind="AuthenticatedSessionController.store.form()"
             :reset-on-success="['password']"
             v-slot="{ errors, processing }"
@@ -82,6 +75,6 @@ defineProps<{
                 Don't have an account?
                 <TextLink :href="register()" :tabindex="5">Sign up</TextLink>
             </div>
-        </Form>
+        </Form> -->
     </AuthBase>
 </template>

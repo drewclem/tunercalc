@@ -3,22 +3,22 @@ import { Head } from '@inertiajs/vue3';
 
 import AppearanceTabs from '@/components/AppearanceTabs.vue';
 import HeadingSmall from '@/components/HeadingSmall.vue';
-import { type BreadcrumbItem } from '@/types';
+// import { type BreadcrumbItem } from '@/types';
 
 import AppLayout from '@/layouts/AppLayout.vue';
 import SettingsLayout from '@/layouts/settings/Layout.vue';
-import { appearance } from '@/routes';
+// import { appearance } from '@/routes';
 
-const breadcrumbItems: BreadcrumbItem[] = [
-    {
-        title: 'Appearance settings',
-        href: appearance().url,
-    },
-];
+// const breadcrumbItems: BreadcrumbItem[] = [
+//     {
+//         title: 'Appearance settings',
+//         href: appearance().url,
+//     },
+// ];
 </script>
 
 <template>
-    <AppLayout :breadcrumbs="breadcrumbItems">
+    <AppLayout>
         <Head title="Appearance settings" />
 
         <SettingsLayout>

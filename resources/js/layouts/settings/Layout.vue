@@ -1,29 +1,29 @@
 <script setup lang="ts">
 import Heading from '@/components/Heading.vue';
-import { Button } from '@/components/ui/button';
+// import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
-import { appearance } from '@/routes';
-import { edit as editPassword } from '@/routes/password';
-import { edit } from '@/routes/profile';
-import { type NavItem } from '@/types';
-import { Link } from '@inertiajs/vue3';
+// import { appearance } from '@/routes';
+// import { edit as editPassword } from '@/routes/password';
+// import { edit } from '@/routes/profile';
+// import { type NavItem } from '@/types';
+// import { Link } from '@inertiajs/vue3';
 
-const sidebarNavItems: NavItem[] = [
-    {
-        title: 'Profile',
-        href: edit(),
-    },
-    {
-        title: 'Password',
-        href: editPassword(),
-    },
-    {
-        title: 'Appearance',
-        href: appearance(),
-    },
-];
+// const sidebarNavItems: NavItem[] = [
+//     {
+//         title: 'Profile',
+//         href: edit(),
+//     },
+//     {
+//         title: 'Password',
+//         href: editPassword(),
+//     },
+//     {
+//         title: 'Appearance',
+//         href: appearance(),
+//     },
+// ];
 
-const currentPath = typeof window !== undefined ? window.location.pathname : '';
+// const currentPath = typeof window !== undefined ? window.location.pathname : '';
 </script>
 
 <template>
@@ -33,7 +33,7 @@ const currentPath = typeof window !== undefined ? window.location.pathname : '';
         <div class="flex flex-col lg:flex-row lg:space-x-12">
             <aside class="w-full max-w-xl lg:w-48">
                 <nav class="flex flex-col space-y-1 space-x-0">
-                    <Button
+                    <!-- <Button
                         v-for="item in sidebarNavItems"
                         :key="typeof item.href === 'string' ? item.href : item.href?.url"
                         variant="ghost"
@@ -46,7 +46,7 @@ const currentPath = typeof window !== undefined ? window.location.pathname : '';
                         <Link :href="item.href">
                             {{ item.title }}
                         </Link>
-                    </Button>
+                    </Button> -->
                 </nav>
             </aside>
 

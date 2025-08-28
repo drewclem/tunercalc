@@ -1,26 +1,26 @@
 <script setup lang="ts">
-import ProfileController from '@/actions/App/Http/Controllers/Settings/ProfileController';
-import { Form } from '@inertiajs/vue3';
-import { ref } from 'vue';
+// import ProfileController from '@/actions/App/Http/Controllers/Settings/ProfileController';
+// import { Form } from '@inertiajs/vue3';
+// import { ref } from 'vue';
 
 // Components
 import HeadingSmall from '@/components/HeadingSmall.vue';
-import InputError from '@/components/InputError.vue';
+// import InputError from '@/components/InputError.vue';
 import { Button } from '@/components/ui/button';
 import {
     Dialog,
-    DialogClose,
+    // DialogClose,
     DialogContent,
-    DialogDescription,
-    DialogFooter,
-    DialogHeader,
-    DialogTitle,
+    // DialogDescription,
+    // DialogFooter,
+    // DialogHeader,
+    // DialogTitle,
     DialogTrigger,
 } from '@/components/ui/dialog';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
+// import { Input } from '@/components/ui/input';
+// import { Label } from '@/components/ui/label';
 
-const passwordInput = ref<InstanceType<typeof Input> | null>(null);
+// const passwordInput = ref<InstanceType<typeof Input> | null>(null);
 </script>
 
 <template>
@@ -36,7 +36,7 @@ const passwordInput = ref<InstanceType<typeof Input> | null>(null);
                     <Button variant="destructive">Delete account</Button>
                 </DialogTrigger>
                 <DialogContent>
-                    <Form
+                    <!-- <Form
                         v-bind="ProfileController.destroy.form()"
                         reset-on-success
                         @error="() => passwordInput?.$el?.focus()"
@@ -77,7 +77,7 @@ const passwordInput = ref<InstanceType<typeof Input> | null>(null);
 
                             <Button type="submit" variant="destructive" :disabled="processing"> Delete account </Button>
                         </DialogFooter>
-                    </Form>
+                    </Form> -->
                 </DialogContent>
             </Dialog>
         </div>
