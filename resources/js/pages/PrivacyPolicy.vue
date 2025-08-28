@@ -18,7 +18,7 @@ import { Head } from '@inertiajs/vue3';
                     <section class="mb-8">
                         <h2 class="mb-4 text-2xl font-semibold">Introduction</h2>
                         <p class="mb-4">
-                            AutoCalc Pro ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect,
+                            TunerCalc ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect,
                             use, and safeguard your information when you use our automotive calculator application.
                         </p>
                     </section>
@@ -65,7 +65,7 @@ import { Head } from '@inertiajs/vue3';
                     <section class="mb-8">
                         <h2 class="mb-4 text-2xl font-semibold">Third-Party Services</h2>
                         <p>
-                            AutoCalc Pro may use third-party analytics services to help us understand how our application is used. These services may
+                            TunerCalc may use third-party analytics services to help us understand how our application is used. These services may
                             collect information about your usage patterns in accordance with their own privacy policies.
                         </p>
                     </section>
