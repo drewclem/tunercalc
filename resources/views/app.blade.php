@@ -40,13 +40,13 @@
         <meta property="og:url" content="https://tunercalc.com/" />
         <meta property="og:title" content="TunerCalc" />
         <meta property="og:description" content="TunerCalc is your free online performance toolbox. Calculate compression ratio, injector size, turbo sizing, and horsepower to trap speed with fast, accurate car tuning calculators." />
-        <meta property="og:image" content="https://tunercalc.com/assets/images/og-image.png" />
+        <meta property="og:image" content="https://tunercalc.com/images/og-image.png" />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://tunercalc.com/" />
         <meta property="twitter:title" content="TunerCalc" />
         <meta property="twitter:description" content="TunerCalc is your free online performance toolbox. Calculate compression ratio, injector size, turbo sizing, and horsepower to trap speed with fast, accurate car tuning calculators." />
-        <meta property="twitter:image" content="https://tunercalc.com/assets/images/og-image.png" />
+        <meta property="twitter:image" content="https://tunercalc.com/images/og-image.png" />
 
         <link rel="icon" href="/favicon.ico" sizes="any">
         <link rel="icon" href="/favicon.svg" type="image/svg+xml">
