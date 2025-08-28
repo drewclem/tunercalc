@@ -2,7 +2,7 @@
 import { Link } from '@inertiajs/vue3';
 import AppLogoIcon from '@/components/AppLogoIcon.vue';
 import AdSlot from '@/components/shared/AdSlot.vue';
-
+import { home } from '@/routes';
 </script>
 
 <template>
@@ -21,7 +21,9 @@ import AdSlot from '@/components/shared/AdSlot.vue';
           />
           <div>
             <div class="flex items-center space-x-2 mb-4">
-              <AppLogoIcon class="size-24 text-accent" />
+              <Link :href="home()" class="flex items-center gap-x-2">
+                <AppLogoIcon class="size-24 text-accent" />
+              </Link>
             </div>
             <p class="text-muted-foreground text-sm">
               Professional automotive calculators for enthusiasts and professionals. 
