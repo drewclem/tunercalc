@@ -2,6 +2,7 @@
 import CalculatorLayout from '@/components/shared/CalculatorLayout.vue';
 import CalculatorResults from '@/components/shared/CalculatorResults.vue';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Link } from '@inertiajs/vue3';
 import { Zap } from 'lucide-vue-next';
 import { ref } from 'vue';
 
@@ -232,6 +233,28 @@ const onCalculate = (values: Record<string, string | number>) => {
                             <li>GT25-GT28: 300-500 HP</li>
                             <li>GT30-GT35: 400-700 HP</li>
                             <li>GT40+: 600+ HP</li>
+                        </ul>
+                    </div>
+                    <div class="mt-6">
+                        <ul class="space-y-2">
+                            <li>
+                                <Link href="/compression-ratio-calculator" class="hover:underline">
+                                    Need to lower compression for boost? Check our
+                                    <span class="font-medium text-accent">Compression Ratio Calculator</span>.
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/injector-size-calculator" class="hover:underline">
+                                    Need to size injectors for your turbo? Try our
+                                    <span class="font-medium text-accent">Fuel Injector Calculator</span>.
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/trap-speed-calculator" class="hover:underline">
+                                    Want to estimate your boosted performance? Use our
+                                    <span class="font-medium text-accent">HP to Trap Speed Calculator</span>.
+                                </Link>
+                            </li>
                         </ul>
                     </div>
                 </CardContent>

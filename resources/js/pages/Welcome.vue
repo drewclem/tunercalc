@@ -56,11 +56,14 @@ const cards: CalculatorCard[] = [
             <div class="mb-16 px-6 text-center lg:px-0">
                 <Stack>
                     <Stack space="medium">
-                        <h1 class="text-4xl font-bold text-accent md:text-6xl">
+                        <h1 class="text-4xl leading-8 font-bold text-accent md:text-6xl">
                             <span>T<span class="inline-block origin-bottom-left -translate-y-0.5 scale-75 transform">UNER</span></span>
                             <span class="-ml-6 lg:-ml-12">
-                                C<span class="inline-block origin-bottom-left -translate-y-0.5 scale-75 transform">ALC</span>
+                                C<span class="inline-block origin-bottom-left -translate-y-0.5 scale-75 transform">ALC:</span>
                             </span>
+                            <br /><span class="text-3xl text-primary dark:text-primary-foreground"
+                                >Car Performance Calculators for Tuners & Enthusiasts</span
+                            >
                         </h1>
 
                         <p class="text-lg text-muted-foreground lg:mx-auto lg:max-w-2xl">

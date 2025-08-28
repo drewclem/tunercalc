@@ -2,6 +2,7 @@
 import CalculatorLayout from '@/components/shared/CalculatorLayout.vue';
 import CalculatorResults from '@/components/shared/CalculatorResults.vue';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Link } from '@inertiajs/vue3';
 import { Target } from 'lucide-vue-next';
 import { ref } from 'vue';
 
@@ -272,6 +273,27 @@ const onCalculate = (values: Record<string, number | string>) => {
                             <li>ET affected more by launch</li>
                             <li>Trap speed shows true power</li>
                             <li>Both important for complete picture</li>
+                        </ul>
+                    </div>
+                    <div class="mt-6">
+                        <ul class="space-y-2">
+                            <li>
+                                <Link href="/compression-ratio-calculator" class="hover:underline">
+                                    Want to increase power? Check our
+                                    <span class="font-medium text-accent">Compression Ratio Calculator</span>.
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/injector-size-calculator" class="hover:underline">
+                                    Need more fuel for higher HP? Try our <span class="font-medium text-accent">Fuel Injector Calculator</span>.
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/turbo-size-calculator" class="hover:underline">
+                                    Planning forced induction? Use our
+                                    <span class="font-medium text-accent">Turbo Sizing Calculator</span>.
+                                </Link>
+                            </li>
                         </ul>
                     </div>
                 </CardContent>

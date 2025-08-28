@@ -2,6 +2,7 @@
 import CalculatorLayout from '@/components/shared/CalculatorLayout.vue';
 import CalculatorResults from '@/components/shared/CalculatorResults.vue';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Link } from '@inertiajs/vue3';
 import { Info } from 'lucide-vue-next';
 import { ref } from 'vue';
 
@@ -183,6 +184,27 @@ const onCalculate = (values: Record<string, string | number>) => {
                             <li>9.5-10.5:1 - 91-93 octane premium</li>
                             <li>10.5-12:1 - 100+ octane race fuel</li>
                             <li>12:1+ - Methanol or very high octane</li>
+                        </ul>
+                    </div>
+                    <div class="mt-6">
+                        <ul class="space-y-2">
+                            <li>
+                                <Link href="/injector-size-calculator" class="hover:underline">
+                                    Need to size injectors for your turbo setup? Try our
+                                    <span class="font-medium text-accent">Fuel Injector Calculator</span>.
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/turbo-size-calculator" class="hover:underline">
+                                    Planning forced induction? Check our <span class="font-medium text-accent">Turbo Sizing Calculator</span>.
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/trap-speed-calculator" class="hover:underline">
+                                    Want to estimate performance? Use our
+                                    <span class="font-medium text-accent">HP to Trap Speed Calculator</span>.
+                                </Link>
+                            </li>
                         </ul>
                     </div>
                 </CardContent>

@@ -11,9 +11,9 @@ Route::get('/', function () {
     return Inertia::render('Welcome');
 })->name('home');
 
-Route::get('dashboard', function () {
-    return Inertia::render('Dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+// Route::get('dashboard', function () {
+//     return Inertia::render('Dashboard');
+// })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('compression-ratio-calculator', IndexCompressionRatioController::class)->name('compression-ratio');
 Route::get('turbo-size-calculator', IndexTurboSizingController::class)->name('turbo-sizing');
@@ -28,5 +28,5 @@ Route::get('terms-of-service', function () {
     return Inertia::render('TermsOfService');
 })->name('terms-of-service');
 
-require __DIR__ . '/settings.php';
-require __DIR__ . '/auth.php';
+// require __DIR__ . '/settings.php';
+// require __DIR__ . '/auth.php';

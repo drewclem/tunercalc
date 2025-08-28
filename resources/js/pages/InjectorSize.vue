@@ -2,6 +2,7 @@
 import CalculatorLayout from '@/components/shared/CalculatorLayout.vue';
 import CalculatorResults from '@/components/shared/CalculatorResults.vue';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Link } from '@inertiajs/vue3';
 import { Lightbulb } from 'lucide-vue-next';
 import { ref } from 'vue';
 
@@ -184,6 +185,29 @@ const onCalculate = (values: Record<string, string | number>) => {
                             <li>0.45 - Naturally aspirated engines</li>
                             <li>0.55 - Turbocharged engines</li>
                             <li>0.65 - High boost/E85 applications</li>
+                        </ul>
+                    </div>
+                    <div class="mt-6">
+                        <ul class="space-y-2">
+                            <li>
+                                <Link href="/compression-ratio-calculator" class="hover:underline">
+                                    Building a high-compression engine? Check our
+                                    <span class="font-medium text-accent">Compression Ratio Calculator</span>.
+                                </Link>
+                            </li>
+
+                            <li>
+                                <Link href="/turbo-size-calculator" class="hover:underline">
+                                    Need to match injectors to your turbo? Try our
+                                    <span class="font-medium text-accent">Turbo Sizing Calculator</span>.
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/trap-speed-calculator" class="hover:underline">
+                                    Want to estimate your car's performance? Use our
+                                    <span class="font-medium text-accent">HP to Trap Speed Calculator</span>.
+                                </Link>
+                            </li>
                         </ul>
                     </div>
                 </CardContent>
