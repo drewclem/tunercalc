@@ -52,6 +52,9 @@
         <link rel="icon" href="/favicon.svg" type="image/svg+xml">
         <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8922717808328069"
+     crossorigin="anonymous"></script>
+
         {{-- <script type="application/ld+json">
             {
               "@context": "https://schema.org",
